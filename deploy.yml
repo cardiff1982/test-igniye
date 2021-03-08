@@ -28,7 +28,7 @@ spec:
         - name: CONFIG_URI
           value: file:///ignite/config/node-configuration.xml
         - name: JVM_OPTS
-          value: -Djava.net.preferIPv4Stack=true
+          value: -Xms512m -Xmx512m -Djava.net.preferIPv4Stack=true
         ports:
         # Ports to open.
         - containerPort: 47100 # communication SPI port
