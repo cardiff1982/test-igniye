@@ -27,6 +27,8 @@ spec:
           value: ignite-kubernetes,ignite-rest-http
         - name: CONFIG_URI
           value: file:///ignite/config/node-configuration.xml
+        - name: JVM_OPTS
+          value: -Djava.net.preferIPv4Stack=true
         ports:
         # Ports to open.
         - containerPort: 47100 # communication SPI port
